@@ -40,7 +40,7 @@ for($arv2 = 0; $arv2 <= 10; $arv2++){
     }*/
     $txt = ($arv2 == 0) ? '&nbsp;' : $arv2;
     echo '<th style="width: 20px; text-align: center; border:solid 1px black; background: purple">';
-    echo $arv2;
+    echo $txt;
     echo '</th>';
 }
 //põhitabel
@@ -60,3 +60,5 @@ for($arv1 = 1; $arv1 <= 10; $arv1++){
     echo '</tr>';
 }
 echo '</table>';
+echo '<hr>';
+
