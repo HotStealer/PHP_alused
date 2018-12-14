@@ -31,10 +31,14 @@ echo '</table>';
 echo '<hr>';
 //korrutustabel
 echo '<table style="border-collapse:collapse">';
-// ülemine punane riba - algus - tühikast
-echo '<th style="width: 20px; text-align: center; border:solid 1px black; background: purple">&nbsp;</th>';
 // ülemine punane riba - numbrid 1-10
-for($arv2 = 1; $arv2 <= 10; $arv2++){
+for($arv2 = 0; $arv2 <= 10; $arv2++){
+    /*if($arv2 == 0){
+        $txt = '&nbsp;';
+    } else{
+        $txt = $arv2;
+    }*/
+    $txt = ($arv2 == 0) ? '&nbsp;' : $arv2;
     echo '<th style="width: 20px; text-align: center; border:solid 1px black; background: purple">';
     echo $arv2;
     echo '</th>';
