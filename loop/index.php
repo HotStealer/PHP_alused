@@ -39,7 +39,7 @@ for($arv2 = 0; $arv2 <= 10; $arv2++){
         $txt = $arv2;
     }*/
     $txt = ($arv2 == 0) ? '&nbsp;' : $arv2;
-    echo '<th style="width: 20px; text-align: center; border:solid 1px black; background: purple">';
+    echo '<th style="width: 20px; text-align: center; border:solid 1px black; background: lightpink">';
     echo $txt;
     echo '</th>';
 }
@@ -60,5 +60,21 @@ for($arv1 = 1; $arv1 <= 10; $arv1++){
     echo '</tr>';
 }
 echo '</table>';
+
 echo '<hr>';
 
+$arv = 123;
+$numbriteSumma = 0;
+while ($arv !=0){
+    //leiame numbri
+    $number = $arv % 10;
+    echo 'Number = '.$number.'<br>';
+    //valmistame arv järgmiseks tsükli sammuks
+    $arv = $arv / 10;
+    settype($arv,'int');
+    echo 'Uus arv on '.$arv.'<br>';
+    //leiame ka hetkel olev summa
+    $numbriteSumma = $numbriteSumma + $number;
+    echo 'Hetkel summa = '.$numbriteSumma.'<br>';
+}
+echo '<b>Lõplik summa = '.$numbriteSumma.'<br></b>';
