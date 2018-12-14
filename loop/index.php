@@ -87,7 +87,7 @@ while($arv !=0){
     //leiame numbri
     $number = $arv % 10;
     if($number == 5){
-        $numberKokku = $numberKokku++;
+        $numberKokku = $numberKokku +1;
     }
     $arv = $arv / 10;
     settype($arv, 'int');
