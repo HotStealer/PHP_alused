@@ -6,5 +6,7 @@ $eesti_kuud = array(1=>'jaanuar', 'veebruar', 'märts', 'aprill', 'mai', 'juuni'
 $paev = date('d');
 $kuu = $eesti_kuud[date('n')];
 $aasta = date('Y');
-echo $paev.'.'.$kuu.' '.$aasta;
+echo $paev.'.'.$kuu.' '.$aasta.'<br>';
+$sp = mktime(18,14,4,11,21,1979);
+echo date('d.m.Y', $sp).'<br>';
 ?>
