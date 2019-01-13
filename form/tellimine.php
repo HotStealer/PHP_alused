@@ -1,11 +1,17 @@
 <h1>Tellimine</h1>
 <?php
-    // lisab vormist saadud andmed muutujasse
-    $toode1 = $_GET['t1'];
-    $toode2 = $_GET['t2'];
-    $toode3 = $_GET['t3'];
-
-    echo 'Toode 1: '.$toode1.'tk';
-    echo 'Toode 2: '.$toode2.'tk';
-    echo 'Toode 3: '.$toode3.'tk';
+    // kera
+    $keraadius = $_GET['ker'];
+    $keruumala = 4/3*3.14*$keraadius*$keraadius*$keraadius;
+    echo 'Kera ruumala on: '.$keruumala.'<br>';
+    // silinder
+    $sraadius = $_GET['sr'];
+    $skorgus = $_GET['sh'];
+    $sruumala = 3.14*$sraadius*$sraadius*$skorgus;
+    echo 'Silindri ruumala on: '.$sruumala.'<br>';
+    // koonus
+    $koraadius = $_GET['kor'];
+    $kokorgus = $_GET['koh'];
+    $koruumala = 1/3*3.14*$koraadius*$koraadius*$kokorgus;
+    echo 'Koonuse ruumala on: '.$koruumala.'<br>';
 ?>
