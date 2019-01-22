@@ -1,5 +1,7 @@
 <?php
-$tekst = 'Experience is the teacher of fools';
-echo strlen($tekst);
-echo '<br>';
-echo str_word_count($tekst);
+$tekst = '         A woman should soften but not weaken a man      ';
+echo "<pre>$tekst</pre>";
+echo '<pre>'.trim($tekst).'</pre>';
+echo '<pre>'.ltrim($tekst).'</pre>';
+echo '<pre>'.rtrim($tekst).'</pre>';
+echo trim($tekst, "A, a, k..n, w");
