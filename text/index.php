@@ -1,6 +1,5 @@
 <?php
 $nimi = $_GET['nimi'];
-
-echo 'Tere, '.ucfirst(strtolower($nimi));
-
-
+$otsi = array('noob','kurat','raisk');
+$asenda = '****';
+echo str_replace($otsi, $asenda, $nimi);
