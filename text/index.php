@@ -1,9 +1,10 @@
 <?php
-$tekst = 'Happiness in intelligent people is the rarest thing I know.';
-$otsitav = 'in';
+$tekst = 'Pai papa, pane paadile punased purjed peale';
+$asendus = 'emme';
+$otsitav = 'papa';
 $nihe = 0;
-while($leia_tekstist = strpos($tekst,$otsitav,$nihe)){
-    echo $leia_tekstist.'<br>';
-    $nihe = $leia_tekstist+strlen($otsitav);
-}
+$asendus_algus = strpos($tekst, $otsitav, $nihe);
+$asenduse_markide_arv = strlen($otsitav);
+echo substr_replace($tekst, $asendus, $asendus_algus, $asenduse_markide_arv);
+
 
