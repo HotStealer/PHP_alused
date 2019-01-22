@@ -1,7 +1,5 @@
 <?php
-$tekst = '         A woman should soften but not weaken a man      ';
-echo "<pre>$tekst</pre>";
-echo '<pre>'.trim($tekst).'</pre>';
-echo '<pre>'.ltrim($tekst).'</pre>';
-echo '<pre>'.rtrim($tekst).'</pre>';
-echo trim($tekst, "A, a, k..n, w");
+$tekst = '<b>Experience</b> <a href="#">is</a> the teacher <br> of fools';
+echo strip_tags($tekst);
+echo '<br>';
+echo strip_tags($tekst, '<b>, <br>');
