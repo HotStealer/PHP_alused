@@ -1,7 +1,5 @@
 <?php
-$tekst = 'Life Is About Ignoring The Drama. ';
-echo strtolower($tekst);
+$tekst = 'Experience is the teacher of fools';
+echo strlen($tekst);
 echo '<br>';
-echo strtoupper($tekst);
-echo '<br>';
-echo ucfirst(strtolower($tekst));
+echo str_word_count($tekst);
