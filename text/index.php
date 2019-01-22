@@ -1,7 +1,8 @@
 <?php
 $tekst = 'All thinking men are atheists';
-echo substr($tekst, 3, 5);
+print_r(str_word_count($tekst,1));
 echo '<br>';
-echo substr($tekst,4,-13);
+$sona = str_word_count($tekst, 1);
+echo $sona[2];
 echo '<br>';
-echo substr($tekst, -8,7);
+print_r(str_word_count($tekst, 2));
