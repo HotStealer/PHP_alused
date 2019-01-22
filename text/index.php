@@ -1,8 +1,9 @@
 <?php
-$tekst = 'All thinking men are atheists';
-print_r(str_word_count($tekst,1));
-echo '<br>';
-$sona = str_word_count($tekst, 1);
-echo $sona[2];
-echo '<br>';
-print_r(str_word_count($tekst, 2));
+$tekst = 'Happiness in intelligent people is the rarest thing I know.';
+$otsitav = 'in';
+$nihe = 0;
+while($leia_tekstist = strpos($tekst,$otsitav,$nihe)){
+    echo $leia_tekstist.'<br>';
+    $nihe = $leia_tekstist+strlen($otsitav);
+}
+
